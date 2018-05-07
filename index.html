@@ -21,7 +21,7 @@
             &nbsp;
           </div>
           <div class="col-5 col-sm-3 col-md-3">
-            <a href="#" class="contact">Fale Conosco</a>
+            <a href="#" class="contact" data-toggle="modal" data-target="#ideaModal">Fale Conosco</a>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
             </div>
           </div>
           <div class="cta row">
-            <p><button type="button" name="button" class="btn">Quero falar sobre a minha ideia</button></p>
+            <p><button type="button" name="button" class="btn" data-toggle="modal" data-target="#ideaModal">Quero falar sobre a minha ideia</button></p>
             <p><em>Deixe o seu e-mail e resuma de forma objetiva: para qual segmento, quais dores identificou e o que a solução irá resolver.</em></p>
           </div>
         </div>
@@ -145,7 +145,7 @@
             </div>
           </div>
           <div class="cta row">
-            <p><button type="button" name="button" class="btn">Sou investidor e quero conhecer mais</button></p>
+            <p><button type="button" name="button" class="btn" data-toggle="modal" data-target="#investorModal">Sou investidor e quero conhecer mais</button></p>
             <p><em>Deixe o seu e-mail e escreva um pouco sobre você.</em></p>
           </div>
         </div>
@@ -154,7 +154,7 @@
       <div class="innovator">
         <div class="cta container">
           <h2>Sou fora da curva e quero trabalhar com pessoas sensacionais</h2>
-          <p><button type="button" name="button" class="btn">Entre em contato</button></p>
+          <p><button type="button" name="button" class="btn" data-toggle="modal" data-target="#innovatorModal">Entre em contato</button></p>
           <p><em>Deixe o seu e-mail e envie seu CV que em breve entraremos em contato.</em></p>
         </div>
       </div>
@@ -172,7 +172,7 @@
                 04444-333 - 15&ordm; andar
               </p>
               <p>
-                <a href="mailto:joao@jumpervb.com.br?subject=Contato">joao@jumpervb.com.br</a>
+                <a href="mailto:contato@jumpervb.com.br?subject=Contato">joao@jumpervb.com.br</a>
               </p>
             </address>
           </div>
@@ -196,6 +196,81 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="ideaModal" tabindex="-1" role="dialog" aria-labelledby="ideaModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ideaModalLabel">Tenho uma ideia</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="ideaEmail" aria-describedby="ideaEmailHelp" placeholder="Seu e-mail principal">
+                <small id="ideaEmailHelp" class="form-text text-muted">Preencha com o melhor e-mail para contatar você.</small>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="investorModal" tabindex="-1" role="dialog" aria-labelledby="investorModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="investorModalLabel">Sou investidor</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="investorEmail" aria-describedby="investorEmailHelp" placeholder="Seu e-mail principal">
+                <small id="investorEmailHelp" class="form-text text-muted">Preencha com o melhor e-mail para contatar você.</small>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="innovatorModal" tabindex="-1" role="dialog" aria-labelledby="innovatorModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="innovatorModalLabel">Sou fora da curva</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="innovatorEmail" aria-describedby="innovatorEmailHelp" placeholder="Seu e-mail principal">
+                <small id="innovatorEmailHelp" class="form-text text-muted">Preencha com o melhor e-mail para contatar você.</small>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Includes -->
     <script type="text/javascript" src="assets/vendor/jquery.js"></script>
