@@ -1,6 +1,11 @@
 /* Layout */
 body {
   background-color: #2A123D;
+  width: 100%;
+}
+#logo {
+  width: 75px;
+  height: 36px;
 }
 header {
   height: 72px;
@@ -11,40 +16,39 @@ header {
   width: 100%;
   z-index: 1000;
 }
+header .contact {
+  padding-top: 20px;
+  display: block;
+  text-align: right;
+  text-size: 14px;
+}
 header .col, header .col-3 {
   padding-top: 15px;
 }
-header .col-3 a {
-  padding-top: 10px;
-  display: block;
-  text-align: right;
-}
-main .intro {
+.intro {
   color: #ffffff;
   background: url('../png/top-image.png') center bottom;
-  padding: 140px 100px 50px 100px;
+  padding: 100px 10px 50px 10px;
 }
-main .intro h1 {
+.intro h1 {
+  font-size: 2em;
   line-height: 1.5em;
-  margin-bottom: 2em;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 0.05em;
   text-align: center;
 }
-.circles {
-  margin: 0 1em 0 1em;
-}
-.oval {
-  width: 140px;
-  height: 140px;
+.intro .oval {
+  width: 80px;
+  height: 80px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   border: solid 4px #ffffff;
   vertical-align: middle;
   display: table-cell;
   text-align: center;
   text-transform: uppercase;
-  border-radius: 70px;
+  border-radius: 40px;
+  font-size: 10px;
   color: #C347B4;
   text-size: 1.5em;
 }
@@ -53,39 +57,22 @@ main .intro h1 {
   height: 2px;
   opacity: 0.5;
   border-bottom: dashed 3px #ffffff;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 .padding-0 {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 em {
   font-size: 0.85em;
 }
 
-.cta {
-  text-align: center;
-}
-.cta p {
-  display: block;
-  width: 60%;
-  margin: 0.5em auto;
-}
-
 .idea {
-  margin: 4em auto 0 auto;
-  width: 70%;
-  background: white;
+  text-align: center;
+}
+.idea .container {
   padding: 3em;
-  text-align: center;
-}
-.descr {
-  margin: 1em auto;
-  width: 70%;
-  text-align: center;
-}
-.descr p {
-  width: 100%;
+  background: white;
 }
 .idea figure {
   width: 64px;
@@ -94,6 +81,8 @@ em {
 .idea figcaption {
   font-family: 'Anton', sans-serif;
   font-size: 1.5em;
+  color: #C347B4;
+  padding-top: 15px;
 }
 .idea .figs {
   margin-bottom: 2em;
@@ -113,9 +102,11 @@ em {
 
 .investor {
   color: white;
-  margin: 0 auto;
-  width: 70%;
-  padding: 3em;
+  padding: 2em 10px;
+  text-align: center;
+}
+.investor p {
+  width: 100%;
   text-align: center;
 }
 .investor .pillars {
@@ -134,17 +125,12 @@ em {
   text-align: center;
 }
 .innovator h2 {
-  width: 50%;
   margin: 1em auto;
 }
 
 footer {
   color: white;
   margin: 2em 0;
-}
-footer .row {
-  width: 70%;
-  margin: 0 auto;
 }
 footer address {
   font-style: italic;
@@ -171,12 +157,17 @@ h1, h2 {
 .btn {
   background: #C347B4;
   color: white;
-  padding: 10px 15px;
-  font-size: 1em;
+  padding: 5px 10px;
   text-transform: uppercase;
+  font-size: 14px;
 }
 .btn:hover {
   background: #F357C4;
+}
+.cta p {
+  display: block;
+  text-align: center;
+  margin: 0.5em auto;
 }
 
 a:link {
@@ -188,7 +179,69 @@ a:hover {
 
 /* For tablets: */
 @media only screen and (min-width: 600px) {
-
+  #logo {
+    width: 100px;
+    height: 48px;
+  }
+  .intro {
+    padding: 140px 100px 50px 100px;
+  }
+  .intro h1 {
+    line-height: 1.5em;
+    margin-bottom: 2em;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+  .intro .oval {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    font-size: 1em;
+  }
+  .descr {
+    margin: 1em auto;
+    width: 70%;
+    text-align: center;
+  }
+  .descr p {
+    width: 100%;
+  }
+  .intro {
+    padding: 140px 100px 50px 100px;
+  }
+  .circles {
+    margin: 0 1em 0 1em;
+  }
+  .idea {
+    margin: 2em auto 0 auto;
+  }
+  .investor {
+    padding: 3em;
+  }
+  .line {
+    display: block;
+    height: 2px;
+    opacity: 0.5;
+    border-bottom: dashed 3px #ffffff;
+    margin-top: 70px;
+  }
+  .cta {
+    text-align: center;
+  }
+  .cta p {
+    display: block;
+    width: 60%;
+    margin: 0.5em auto;
+  }
+  footer .row {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .btn {
+    font-size: 1em;
+  }
 }
 /* For desktop: */
 @media only screen and (min-width: 768px) {
