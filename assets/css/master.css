@@ -138,6 +138,30 @@ em {
   margin: 1em auto;
 }
 
+footer {
+  color: white;
+  margin: 2em 0;
+}
+footer .row {
+  width: 70%;
+  margin: 0 auto;
+}
+footer address {
+  font-style: italic;
+}
+footer ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  display: inline;
+  margin: 0 5px;
+}
+footer li a:hover {
+  text-decoration: none;
+}
+
 /* Typo */
 h1, h2 {
   font-family: 'Anton', sans-serif;
