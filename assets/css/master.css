@@ -1,4 +1,7 @@
 /* Layout */
+body {
+  background-color: #2A123D;
+}
 header {
   height: 72px;
   background-color: #ffffff;
@@ -7,31 +10,58 @@ header {
   display: block;
   width: 100%;
 }
-header .col {
+header .col, header .col-3 {
   padding-top: 15px;
-  text-align: center;
-  vertical-align: middle;
+}
+header .col-3 a {
+  padding-top: 10px;
+  display: block;
+  text-align: right;
 }
 main .intro {
-  font-family: BebasNeue;
-  font-size: 48px;
-  font-weight: bold;
+  color: #ffffff;
+  background: url('../png/top-image.png') center bottom;
+  padding: 140px 100px 50px 100px;
+}
+main .intro h1 {
+  line-height: 1.5em;
+  margin-bottom: 2em;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
+  letter-spacing: 0.05em;
   text-align: center;
-  color: #ffffff;
 }
-.Oval {
+.circles {
+  margin: 0 1em 0 1em;
+}
+.oval {
   width: 140px;
   height: 140px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   border: solid 4px #ffffff;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 70px;
+  color: #C347B4;
+  text-size: 1.5em;
+}
+.line {
+  display: block;
+  height: 2px;
+  opacity: 0.5;
+  border-bottom: dashed 3px #ffffff;
+  margin-top: 70px;
+}
+.padding-0 {
+    padding: 0;
+    margin: 0;
 }
 
 /* Typo */
-h1 {
+h1, h2 {
   font-family: 'Anton', sans-serif;
   text-transform: uppercase;
+  text-align: center;
 }
